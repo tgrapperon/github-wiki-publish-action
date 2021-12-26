@@ -13,7 +13,11 @@ with a path to a directory containing the documentation you wish to upload.
 ```yml
 name: Documentation
 
-on: [push]
+on:
+  push:
+    branches:
+      # The branch you want to watch to generate the documentation
+      - main
 
 jobs:
   build:
